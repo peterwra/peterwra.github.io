@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Wratkowski</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <!-- Found a navbar I liked on bootstrap. Wanted the menu to collapse if the screen shrinks. -->
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <a id="logo" class="navbar-brand" href="#">Peter Wratkowski</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link active" href="Portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <!-- Portfolio needs to be all 12 columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+
+      <!-- There is extra space at the end of each row so make the images col-lg-4. -->
+      <!-- Using col-xs-4 and col-md-4 resulted in images overlaping with window resizing. -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-1.jpg" class="img-fluid" style="width:100%" alt="Word Guess">
+            <h3>Word Guess</h3>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-2.jpg" class="img-fluid" style="width:100%" alt="RPG Game">
+            <h3>RPG Game</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-5.jpg" class="img-fluid" style="width:100%" alt="Trivia Game">
+            <h3>Trivia Game</h3>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-7.jpg" class="img-fluid" style="width:100%" alt="Rutgers Info Widget">
+            <h3>Rutgers Info Widget</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-9.jpg" class="img-fluid" style="width:100%" alt="Rock Paper Scissors">
+            <h3>Rock Paper Scissors</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <!-- The footer should contain the full length of 12. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          Copyright &copy;
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

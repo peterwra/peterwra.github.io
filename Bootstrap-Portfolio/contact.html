@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Wratkowski</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <!-- Found a navbar I liked on bootstrap. Wanted the menu to collapse if the screen shrinks. -->
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <a id="logo" class="navbar-brand" href="#">Peter Wratkowski</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="Portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <!-- Put the 'Contact' into one full row. -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <!-- All the items in the contact form should be the full 12 columns. -->
+      <form id="contact-form">
+        <ul>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="message">Message</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea id="message" name="message" required="required"></textarea>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <!-- The footer should contain the full length of 12. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          Copyright &copy;
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
