@@ -1,38 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Peter Wratkowski</title>
+  <meta charset="UTF-8">
+  <title>Peter Wratkowski</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="fixedHeader">
-        <section id="centeredHeader">
-            <div id="headerText">Peter Wratkowski</div>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </section>
-    </header>
-    <div id="mainBody">
-        <h2>Contact</h2>
-        <hr>
-        <form>
-            <label class="contactLabel">Name</label><br>
-            <input type="text" class="textBoxFormat" name="inputName" size=141 placeholder="John Smith"><br>
-            <label class="contactLabel">Email</label><br>
-            <input type="text" class="textBoxFormat" name="inputEmail" size=141 placeholder="example@gmail.com"><br>
-            <label class="contactLabel">Message</label><br>
-            <textarea name="inputMessage" cols="126" rows="20"></textarea><br><br>
-            <button type="button" class="buttonAttributes">Submit</button>
-        </form>
+
+  <header id="masthead">
+    <div class="container">
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <a id="logo" class="navbar-brand" href="#">Peter Wratkowski</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <div id="footerLine"></div>
-    <section class="footer">Copyright &copy;</section>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="https://github.com/peterwra" target="_blank" style="color:gray">GitHub</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="https://www.linkedin.com/in/peter-wratkowski" target="_blank" style="color: gray">LinkedIn</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="mailto:pwratkowski@gmail.com" style="color: gray">Email Me</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="tel:9524840197" style="color: gray">Call Me</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <!-- The footer should contain the full length of 12. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          Copyright &copy;
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

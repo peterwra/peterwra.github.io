@@ -1,40 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Peter Wratkowski</title>
+  <meta charset="UTF-8">
+  <title>Peter Wratkowski</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header id="fixedHeader">
-        <section id="centeredHeader">
-            <div id="headerText">Peter Wratkowski</div>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </section>
-    </header>
-    <div id="mainBody">
-        <h2>About Me</h2>
-        <hr>
-        <!-- I haven't put my bio on yet as I am still thinking about what I should publish. -->
-        <img src="assets/images/portfolio-about-me.png" class="imgPeter" alt="Peter Wratkowski" height="200px" width="200px">
-        <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus, arcu eu ullamcorper tincidunt, lorem ante auctor tellus, a feugiat sapien eros ut sapien. Nunc condimentum arcu ac fringilla volutpat. Curabitur eget tellus ipsum. Fusce at tortor elit. Fusce volutpat nulla mauris. Duis consequat accumsan ante, sed varius lacus tempor vel. Mauris sagittis justo at ipsum condimentum, et pharetra elit elementum. Curabitur at convallis lacus. Nulla ultrices at justo ac porta. Aliquam eleifend massa leo. Sed nisi diam, luctus at dictum sit amet, vulputate sed tortor. Ut rhoncus lectus massa, sit amet sollicitudin arcu porta id.
-        </p>
-        <p>
-                Sed lacinia magna ipsum, non laoreet magna vulputate vitae. Cras semper mi vitae mauris sodales, vitae laoreet quam consequat. Curabitur sagittis velit dictum nisl pretium ultrices. Fusce vestibulum metus ut hendrerit venenatis. Ut eu malesuada elit, in euismod felis. Aliquam sem neque, posuere vel ligula vel, pellentesque facilisis metus. Mauris vitae dignissim augue. Fusce condimentum nisi sit amet leo molestie viverra.
-        </p>
-        <p>
-                Donec dignissim venenatis ante nec dictum. Praesent fermentum tellus sit amet varius semper. Maecenas vel finibus urna. Nullam rutrum placerat nisi, non maximus urna vehicula vitae. Maecenas vitae interdum neque. Nullam at massa vitae urna euismod rhoncus. Praesent non bibendum ligula. Sed id congue nunc, eget vulputate nisl.
-        </p>
+
+  <header id="masthead">
+    <div class="container">
+      <!-- Found a navbar I liked on bootstrap. Wanted the menu to collapse if the screen shrinks. -->
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <a id="logo" class="navbar-brand" href="#">Peter Wratkowski</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <div id="footerLine"></div>
-    <section class="footer">Copyright &copy;</section>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <!-- The 'About Me' should be the full width of the row. -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Image should be 4 because we want the text to appear next to it. -->
+        <div class="col-md-4">
+          <img src="assets/images/portfolio-about-me.png" class="img-fluid auth-image" alt="Peter Wratkowski">
+        </div>
+        <!-- Fill the rest of the row with text. Use class col-md-8. -->
+        <div class="col-md-8">
+          <p>Hello and welcome to my website! I am currently enrolled at the University of Minnesota Coding Bootcamp
+            and will be graduating in July 2019.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <!-- Pararaph should take the full length of the row. -->
+        <div class="col-md-12">
+          <p>After working many years as an Application Systems Analyst I decided I wanted to expand on my knowledge
+            and work more with coding. I received my computer science degree from St. Cloud State University so I have
+            always had a deep passion for learning how to create and develop programs.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <!-- Pararaph should take the full length of the row. -->
+        <div class="col-md-12">
+          <p>My goal is to utilize the skills learned in this class to further enhance the productivity of my coworkers
+            and others around me. Making programs and technology enhance lives is something we can all aspire to!
+          </p>
+        </div>
+      </div>
+      <br>
+      <img src="assets/images/PDF-icon.png" style="height: 50px; width: 50px;">
+      <a href="assets/Peter_Wratkowski.pdf" target="_blank">Resume</a>
+    </section>
+  </div>
+
+  <footer>
+    <!-- The footer should contain the full length of 12. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          Copyright &copy;
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

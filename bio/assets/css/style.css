@@ -1,163 +1,219 @@
-/* Images on portfolio page taken from www.unsplash.com. */
-/* TO DO: Clean up CSS file to combine classes/ids where appropriate. */
-
 body {
-    background: url("../images/background.gif");
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777777;
+  background-image: url("../images/sebastien-gabriel-353369-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#fixedHeader {
-    height: 98px;
-    background-color: #ffffff;
-    border-bottom: 4px solid #cccccc;
+* {
+  box-sizing: border-box;
 }
 
-#centeredHeader {
-    width: 960px;
-    margin: 0 auto;
-    height: inherit;
-    background-color: inherit;
-    padding: none;
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
-#headerText {
-    text-align: center;
-    background-color: #4aaaa5;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 300px;
-    font-size: 30px;
-    float: left;
-    padding: 32px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    float: right;
-}
-
-li {
-    float: left;
-    padding: 50px 5px;
-    font-size: 20px;
-}
-
-#mainBody {
-    width: 960px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-}
-
-#footerLine {
-    background-color: #4aaaa5;
-    height: 5px;
-}
-
-#tableStyle {
-    width: 66%;
-    padding: 10px 0;
-}
-
-.footer {
-    background-color: #666666;
-    text-align: center;
-    padding: 30px 0 0 0;
-    color: lightgray;
-}
-
-.contactLabel {
-    line-height: 2;
-}
-
-.textBoxFormat {
-    padding: 5px;
-    size: 143;
-}
-
-.buttonAttributes {
-    color: white;
-    background-color: #4aaaa5;
-    border: none;
-    padding: 10px 30px;
-}
-
-.imgPeter {
-    float: left;
-    padding: 15px 20px 5px 0;
-}
-
-.imgPortfolioHangman {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hangman.jpg");
-}
-
-.imgPortfolioRpgGame {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/rpg.jpg");
-}
-
-.imgPortfolioTrivia {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/trivia.jpg");
-}
-
-.imgPortfolioWidget {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/widget.jpg");
-}
-
-.imgPortfolioRock {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/rock_paper_scissors.jpg");
-}
-.imgPortfolio {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 250px;
-    position: relative;
-}
-
-.rowPadding {
-    padding: 25px 0;
-}
-
-.imgText {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #4aaaa5;
-    width: 100%;
-    padding: 10px 0;
-}
-
+h1,
+h2,
+h3,
 p {
-    line-height: 30px;
+  margin-bottom: 20px;
 }
 
-h2 {
-    color: #4aaaa5;
+p:last-child {
+  margin-bottom: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #777777;
-    text-align: center;
-    float: right;
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
 }
 
-a:hover {
-    background-color: lightgray;
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
 }
 
-hr {
-    border-color: lightgray;
-    height: 1px;
-    background-color: lightgray;
+h2,
+h3 {
+  font-size: 22px;
+}
+
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+}
+
+#logo {
+  float: left;
+  width: 350px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  height: 50px;
+}
+
+h3, h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  /* width: 100%; */
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
